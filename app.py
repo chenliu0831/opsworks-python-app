@@ -8,7 +8,7 @@ def run_loop():
 
     '''
 
-    length = os.getenv('TEST_LENGTH', 10)
+    length = int(os.getenv('TEST_LENGTH', 10))
 
     arr = np.arange(length)
 
