@@ -1,4 +1,4 @@
-import time
+import os, time
 import numpy as np
 
 
@@ -8,7 +8,9 @@ def run_loop():
 
     '''
 
-    arr = np.arange(10)
+    length = os.getenv('TEST_LENGTH', 10)
+
+    arr = np.arange(length)
 
     while True:
         np.random.shuffle(arr)
